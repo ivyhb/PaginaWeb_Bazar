@@ -11,20 +11,18 @@
 <header>
     <img src="Imagenes/logo2.png" alt="Logo Bazar" width="400" height="150">
     <h1> C&R Vanidades Store </h1>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href= "productos.html">Productos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="resenas.html">Reseñas</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
 </header>
-<!--Menú de navegación para todos -->
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href= "productos.html">Productos</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="resenas.html">Reseñas</a>
-    <a href="contacto.html">Contacto</a>
-</nav>
-<hr>
 <!--Contenido de la página -->
 <main>
     <h2>Categorias</h2>
-    <nav>
+    <nav class="submenu">
         <a href="#juguetes">Juguetes</a>
         <a href="#regalos">Regalos</a>
         <a href="#ropa">Ropa</a>
@@ -39,26 +37,27 @@
 
     <section id="juguetes">
         <h2>Juguetes</h2>
-        <article>
-            <img src="Imagenes/jueguete1.jpeg" alt="Muñeco de peluche Spiderman">
-            <h3>Muñeco de peluche del hombre araña</h3>
-            <p> ¡Ideal para regalar o completar tu colección!</p>
-        </article>
-        <article>
-            <img src="Imagenes/jueguete2.jpeg" alt="Muñeco de peluche Woody">            
-            <h3>Muñeco del vaquero Woody (Toy Story)</h3>
-            <p>Coleccionable de Toy Story en su versión de peluche.</p>  
-        </article>
-        <article>
-            <img src="Imagenes/jueguete3.jpeg" alt="Muñeco de peluche Jessie">            
-            <h3>Muñeca de Peluche Jessie (Toy Story)</h3>
-            <p>La valiente vaquera con su coleta y traje de flecos. </p>
-        </article>
-        <article>
-            <img src="Imagenes/jueguete4.jpeg" alt="Muñeco de Rana René">            
-            <h3>Muñeco de peluche de ranita René con overol </h3>
-            <p> Divertida rana verde con look vaquero. </p>
-        </article>
+        <div class="grid">
+            <article>
+                <img src="Imagenes/jueguete1.jpeg" alt="Muñeco de peluche Spiderman">
+                <h3>Muñeco de peluche del hombre araña</h3>
+                <p> ¡Ideal para regalar o completar tu colección!</p>
+            </article>
+            <article>
+                <img src="Imagenes/jueguete2.jpeg" alt="Muñeco de peluche Woody">            
+                <h3>Muñeco del vaquero Woody (Toy Story)</h3>
+                <p>Coleccionable de Toy Story en su versión de peluche.</p>  
+            </article>
+            <article>
+                <img src="Imagenes/jueguete3.jpeg" alt="Muñeco de peluche Jessie">            
+                <h3>Muñeca de Peluche Jessie (Toy Story)</h3>
+                <p>La valiente vaquera con su coleta y traje de flecos. </p>
+            </article>
+            <article>
+                <img src="Imagenes/jueguete4.jpeg" alt="Muñeco de Rana René">            
+                <h3>Muñeco de peluche de ranita René con overol </h3>
+                <p> Divertida rana verde con look vaquero. </p>
+            </article>
         <article>
             <img src="Imagenes/jueguetes2.jpeg" alt="Juguetes para niños">            
             <h3>Juguetes para los niños de casa </h3>
@@ -70,96 +69,102 @@
             <h3>Juguetes para las niñas </h3>
             <p>Muñecas bebé, cocinitas y casitas para fomentar el juego imaginativo.</p>
         </article>
+        </div>
     </section> 
-    <hr>
     <section id="regalos">
         <h2>Regalos</h2>
-        <article>
-            <img src="Imagenes/regalo1.jpeg" alt="Regalos box día de la madre">                        
-            <h3>Box "Feliz Día Mamá"</h3>
-            <p>Incluye peluche, globo transparente con confeti y tarjeta personalizable.</p>
-        </article>
-         <article>
-            <img src="Imagenes/regalo10.jpeg" alt="Box de regalo Snoopy">                        
-            <h3>Caja de Regalo con Girasol y Snoopy</h3>
-            <p>Un detalle completo, incluye caja decorativa con corazones, un hermoso girasol brillante, un peluche de Snoopy y una bebida.</p>
-        </article>
-        <article> 
-            <img src="Imagenes/regalo13.jpeg" alt="Regalos cumpleaños">                        
-            <h3>Globos Burbuja de Cumpleaños</h3>
-            <p>Globos transparentes de gran tamaño con confeti brillante y mensajes alegres.</p>
-        </article>
-        <article>
-            <img src="Imagenes/regalo3.jpeg" alt="Macetas de regalo">            
-            <h3>Suculentas y Plantas en Maceta Decorativa</h3>
-            <p>Variedad de plantas en macetas de cerámica o madera.</p>
-            <p><strong>Pregunta por la variedad disponible y escoge la maceta que más te guste.</strong></p>
-        </article>
+        <div class="grid">
+            <article>
+                <img src="Imagenes/regalo1.jpeg" alt="Regalos box día de la madre">                        
+                <h3>Box "Feliz Día Mamá"</h3>
+                <p>Incluye peluche, globo transparente con confeti y tarjeta personalizable.</p>
+            </article>
+            <article>
+                <img src="Imagenes/regalo10.jpeg" alt="Box de regalo Snoopy">                        
+                <h3>Caja de Regalo con Girasol y Snoopy</h3>
+                <p>Un detalle completo, incluye caja decorativa con corazones, un hermoso girasol brillante, un peluche de Snoopy y una bebida.</p>
+            </article>
+            <article> 
+                <img src="Imagenes/regalo13.jpeg" alt="Regalos cumpleaños">                        
+                <h3>Globos Burbuja de Cumpleaños</h3>
+                <p>Globos transparentes de gran tamaño con confeti brillante y mensajes alegres.</p>
+            </article>
+            <article>
+                <img src="Imagenes/regalo3.jpeg" alt="Macetas de regalo">            
+                <h3>Suculentas y Plantas en Maceta Decorativa</h3>
+                <p>Variedad de plantas en macetas de cerámica o madera.</p>
+                <p><strong>Pregunta por la variedad disponible y escoge la maceta que más te guste.</strong></p>
+            </article>
+        </div>
     </section>
-    <hr>
     <section id="ropa">
         <h2>Ropa</h2>
-        <article>
-            <img src="Imagenes/ropa2.jpeg" alt="Camisa a rayas mujer">            
-            <h3>Camisa moderna a rayas</h3>
-            <p>Diseños azul rayado y botones. Estilo clásico para un look de oficina o de fin de semana.</p>
-        </article>
-        <article>
-            <img src="Imagenes/ropa5.jpeg" alt="Jean corte recto mujer">            
-            <h3>Jeans corte recto con cinturón</h3>
-            <p>Denim azul con cintura elástica y bolsillos delanteros. Incluye cinturón de piel sintética.</p>
-        </article>
-        <article>
-            <img src="Imagenes/ropa12.jpeg" alt="Blusa manga larga">            
-            <h3>Blusa roja de Manga Larga</h3>
-            <p>Cuello redondo o en V.</p>
-        </article>
-        <article>
-            <img src="Imagenes/ropa11.jpeg" alt="Blusa manga corta con volantes">            
-            <h3>Blusas de Manga Corta con Volantes</h3>
-            <p>Tops juveniles con hombros con volantes en color azul.</p>
-        </article>
-        <article>
-            <img src="Imagenes/ropa9.jpeg" alt="Vestido corto con estampado">            
-            <h3>Vestido de Tirantes con Estampado</h3>
-            <p>Vestido ligero y veraniego en tonos verdes y blancos, con corte entallado.</p>
-        </article>
+        <div class="grid">
+            <article>
+                <img src="Imagenes/ropa2.jpeg" alt="Camisa a rayas mujer">            
+                <h3>Camisa moderna a rayas</h3>
+                <p>Diseños azul rayado y botones. Estilo clásico para un look de oficina o de fin de semana.</p>
+            </article>
+            <article>
+                <img src="Imagenes/ropa5.jpeg" alt="Jean corte recto mujer">            
+                <h3>Jeans corte recto con cinturón</h3>
+                <p>Denim azul con cintura elástica y bolsillos delanteros. Incluye cinturón de piel sintética.</p>
+            </article>
+            <article>
+                <img src="Imagenes/ropa12.jpeg" alt="Blusa manga larga">            
+                <h3>Blusa roja de Manga Larga</h3>
+                <p>Cuello redondo o en V.</p>
+            </article>
+            <article>
+                <img src="Imagenes/ropa11.jpeg" alt="Blusa manga corta con volantes">            
+                <h3>Blusas de Manga Corta con Volantes</h3>
+                <p>Tops juveniles con hombros con volantes en color azul.</p>
+            </article>
+            <article>
+                <img src="Imagenes/ropa9.jpeg" alt="Vestido corto con estampado">            
+                <h3>Vestido de Tirantes con Estampado</h3>
+                <p>Vestido ligero y veraniego en tonos verdes y blancos, con corte entallado.</p>
+            </article>
+        </div>
     </section>
-    <hr>
     <section id="catalogos">
         <h2>Catálogos disponibles</h2>
-        <article>
-            <h3>Natura</h3>
-            <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Natura">
-            <img src="Imagenes/natura-1.png" alt="Catálogo Natura" width="150"></a>
-        </article>
-        <article>
-            <h3>Marca Avon</h3>
-            <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Avon"> 
-            <img src="Imagenes/avon.png" alt="Catálogo Avon" width="150"></a>
-        </article>
-        <article>
-            <h3>Marca Esika</h3>
-            <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Esika">
-             <img src="Imagenes/Esika_logo_PNG1.png" alt="Catálogo Esika" width="150"></a>
-        </article>
-        <article>
-            <h3>Marca Seytu</h3>
-            <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Seytu">
-            <img src="Imagenes/seytu-seeklogo.png" alt="Catálogo Seytu" width="150"></a>
-        </article>
-        <article>
-            <h3>Marca Yanbal</h3>
-            <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Yanbal">
-            <img src="Imagenes/yanbal-seeklogo.png" alt="Catálogo Yanbal" width="150"></a>
-        </article>
+            <div class="grid">
+                <article>
+                    <h3>Natura</h3>
+                    <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Natura">
+                    <img src="Imagenes/natura-1.png" alt="Catálogo Natura" width="150"></a>
+                </article>
+                <article>
+                    <h3>Marca Avon</h3>
+                    <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Avon"> 
+                    <img src="Imagenes/avon.png" alt="Catálogo Avon" width="150"></a>
+                </article>
+                <article>
+                    <h3>Marca Esika</h3>
+                    <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Esika">
+                    <img src="Imagenes/Esika_logo_PNG1.png" alt="Catálogo Esika" width="150"></a>
+                </article>
+                <article>
+                    <h3>Marca Seytu</h3>
+                    <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Seytu">
+                    <img src="Imagenes/seytu-seeklogo.png" alt="Catálogo Seytu" width="150"></a>
+                </article>
+                <article>
+                    <h3>Marca Yanbal</h3>
+                    <a href="https://wa.me/51930438700?text=Hola,%20quisiera%20el%20catálogo%20de%20Yanbal">
+                    <img src="Imagenes/yanbal-seeklogo.png" alt="Catálogo Yanbal" width="150"></a>
+                </article>
+            </div>
     </section>
     <section id="otros">
         <h2>Otros</h2>
-        <article>
-            <h3></h3>
-            <p>Pide tu revista, escríbenos por whatsapp. </p>
-        </article>
+            <div> 
+                <article>
+                    <h3></h3>
+                    <p>Pide tu revista, escríbenos por whatsapp. </p>
+                </article>
+            </div>
     </section>
     <section>
     <h2>¿Te interesa algo?</h2>
