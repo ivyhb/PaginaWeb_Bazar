@@ -1,0 +1,253 @@
+/* VARIABLES (colores y fuente reutilizables en todo el sitio) */
+:root {
+  --color-principal: #e60012;      /*rojo estilo Miniso*/
+  --color-whatsapp: #25D366;       /*verde para los botones del wspp*/
+  --color-fondo: #f8f9fa;
+  --color-texto: #333;
+  --fuente-principal: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*RESET: quita los espacios que el navegador pone por defecto*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.6; /* espacio entre líneas de texto, para que se lea cómodo */
+}
+
+/* HEADER Y NAV (compartido en las 5 páginas) */
+header {
+  background-color: var(--color-principal);
+  color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);  /* sombrita sutil debajo del header */
+  display: flex;              /* pone logo y nav en fila (lado a lado), no uno debajo del otro */
+  justify-content: space-between;  /* logo a la izquierda, nav a la derecha */
+  align-items: center;        /* los centra verticalmente entre sí */
+  max-width: 1200px;
+  margin: 0 auto;              /* centra el header en pantallas grandes */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;   /* quita el subrayado típico de los links */
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  text-decoration: underline;   /* aparece el subrayado solo al pasar el mouse */
+}
+
+/* MAIN: contenedor principal, usado igual en las 5 páginas */
+main {
+  max-width: 1200px;
+  margin: 0 auto;   /* centra el contenido, evita que se estire en pantallas anchas */
+  padding: 20px;
+}
+
+/* ===== SECTION Y ASIDE: la caja blanca que envuelve cada bloque, usada en las 5 páginas ===== */
+section, aside {
+  background-color: #ffffff;
+  border-radius: 8px;         /* esquinas redondeadas */
+  padding: 30px 20px;
+  margin-bottom: 40px;        /* separación entre un bloque y el siguiente */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);   /* sombra suave, da efecto de "tarjeta" */
+}
+
+section h2, aside h2 {
+  color: var(--color-principal);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--color-principal);   /* línea roja debajo del título */
+  display: inline-block;   /* la línea solo abarca el ancho del texto, no toda la fila */
+  padding-bottom: 5px;
+}
+
+/* HERO: banner grande de bienvenida — solo usado en index.html */
+.hero-banner {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);   /* degradado de dos colores */
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.hero-banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;   /* permite darle padding a un link como si fuera un botón */
+  background-color: white;
+  color: var(--color-principal);
+  padding: 10px 25px;
+  border-radius: 20px;   /* número alto = bordes bien redondeados, tipo "pastilla" */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* GRID: tarjetas en fila — usado en index(destacados), productos (catálogo) y resenas */
+.grid {
+  display: flex;
+  flex-wrap: wrap;   /* si no caben todas en una fila, las que sobran bajan a la siguiente */
+  gap: 15px;          /* espacio entre cada tarjeta */
+}
+
+.grid > article {
+  flex: 1 1 250px;   /* cada tarjeta mide al menos 250px, y se reparte el espacio sobrante */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.placeholder-img {
+  background-color: #ddd;
+  height: 150px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;   /* centra el texto "Producto 1" dentro del recuadro gris */
+  color: #666;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.grid img {
+  max-width: 100%;   /* la imagen nunca se sale de su tarjeta, sin importar su tamaño real */
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+
+/* ===== ETIQUETA: rótulo "Oferta"/"Nuevo" sobre una tarjeta — usado en productos*/
+.etiqueta {
+  display: inline-block;
+  background-color: var(--color-principal);
+  color: white;
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  border-radius: 10px;   /* forma de pastillita */
+  margin-bottom: 8px;
+}
+
+/* FORMULARIO DE CONTACTO: solo usado en contacto.html*/
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;   /* en pantallas chicas, el formulario y los datos se apilan solos */
+  gap: 20px;
+}
+
+.contact-form, .contact-info {
+  flex: 1 1 300px;   /* cada mitad ocupa al menos 300px de ancho */
+}
+
+.form-group {
+  margin-bottom: 15px;   /* separa cada campo del formulario (nombre, correo, mensaje) */
+}
+
+.form-group label {
+  display: block;   /* la etiqueta ("Nombre:") queda arriba del input, no al lado */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;   /* el campo ocupa todo el ancho disponible */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn-submit {
+  background-color: var(--color-principal);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;   /* el mouse cambia a "manito" al pasar sobre el botón */
+  font-size: 1rem;
+}
+
+.whatsapp-btn {
+  display: inline-block;
+  background-color: var(--color-whatsapp);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* GALERÍA: fotos en fila — solo usado en nosotros*/
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery .placeholder-img {
+  flex: 1 1 200px;   /* cada foto ocupa al menos 200px, se reparten el espacio entre ellas */
+}
+
+/* SUBMENU: menú interno de categorías — solo usado en productos */
+.submenu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  background-color: #fdecea;   /* rosado clarito, para diferenciarlo del menú principal rojo */
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.submenu a {
+  color: var(--color-principal);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.submenu a:hover {
+  text-decoration: underline;
+}
+
+/*FOOTER: usado igual en las 5 páginas (index, productos, nosotros, resenas, contacto)*/
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #aaa;
+}

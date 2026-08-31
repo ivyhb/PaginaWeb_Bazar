@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto-Vanidades Store</title>
+    <link rel="stylesheet" href="Css/estilos.css">
 </head>
 <body>
 <!--Encabezado de la página -->  
@@ -21,7 +22,45 @@
 </nav>
 <!--Contenido de la página -->
 <main>
-    
+    <section>
+        <h2>Contacto</h2>
+        <div class="contact-container">
+
+            <div class="contact-form">
+                <h3>Envíanos un mensaje</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contacto">Correo o WhatsApp:</label>
+                        <input type="text" id="contacto" name="contacto" placeholder="tucorreo@ejemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar mensaje</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Información de atención</h3>
+                <p><strong>📍 Ubicación:</strong> Av. Mercado Coorporación SJL</p>
+                <p style="margin-top: 10px;"><strong>🕒 Horario de atención:</strong> Lunes a Sábado de 12:00 - 6:00 pm</p>
+                <p style="margin-top: 10px;"><strong>💳 Formas de pago:</strong> Efectivo, Yape, Plin</p>
+
+                <div style="margin-top: 20px;">
+                    <p><strong>Contáctanos directamente por WhatsApp:</strong></p>
+                    <a href="https://wa.me/51930438700" target="_blank" class="whatsapp-btn">
+                        📱 Chatear por WhatsApp
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>    
 </main>
 <!--Pie de página -->  
 <footer></footer>
