@@ -1,6 +1,12 @@
 /* VARIABLES (colores y fuente reutilizables en todo el sitio) */
 :root {
-  --color-principal: #e60012;      /*rojo estilo Miniso*/
+  --color-principal:#F81828;         /*rojo estilo Miniso*/
+  --color-principal-oscuro: #b3101c; /* hover, footer, degradados */
+   --color-acento: #E8C270;          /* dorado — detalles, precios, bordes */
+  --color-secundario1: #F0568E;      /* rosa — para toques puntuales, no protagonista */
+  --color-secundario2: #f7c1bb;
+  --color-secundario3: #1e1e24 ;     /* oscuro — footer, texto fuerte */
+  --color-secundario4: #5dadc9 ;
   --color-whatsapp: #25D366;       /*verde para los botones del wspp*/
   --color-fondo: #f8f9fa;
   --color-texto: #333;
@@ -35,8 +41,8 @@ header {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
+  height: 80px;   
+  width: auto;
 }
 
 nav {
@@ -128,6 +134,10 @@ section h2, aside h2 {
   align-items: center; /*centra horizontalmente cada elemento*/
 }
 
+#catalogos .grid > article {
+  flex: 1 1 180px;  /* mínimo más chico, con 5 caben */
+}
+
 .placeholder-img {
   background-color: #ddd;
   height: 150px;
@@ -155,16 +165,6 @@ section h2, aside h2 {
   width: auto;
   object-fit: contain; /* muestra el logo completo, sin recortar nada */
   margin: 0 auto 10px;  /* lo centra si el contenedor es más ancho que el logo */
-}
-/* ===== ETIQUETA: rótulo "Oferta"/"Nuevo" sobre una tarjeta — usado en productos*/
-.etiqueta {
-  display: inline-block;
-  background-color: var(--color-principal);
-  color: white;
-  font-size: 0.7rem;
-  padding: 2px 8px;
-  border-radius: 10px;   /* forma de pastillita */
-  margin-bottom: 8px;
 }
 
 /* FORMULARIO DE CONTACTO: solo usado en contacto.html*/
@@ -233,14 +233,14 @@ section h2, aside h2 {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  background-color: #fdecea;   /* rosado clarito, para diferenciarlo del menú principal rojo */
+  background-color:var(--color-secundario1);   /* rosado clarito, para diferenciarlo del menú principal rojo */
   padding: 12px;
   border-radius: 6px;
   margin-bottom: 20px;
 }
 
 .submenu a {
-  color: var(--color-principal);
+  color: var(--color-fondo);
   text-decoration: none;
   font-weight: 500;
   font-size: 0.9rem;
@@ -252,14 +252,77 @@ section h2, aside h2 {
 
 /*FOOTER: usado igual en las 5 páginas (index, productos, nosotros, resenas, contacto)*/
 footer {
-  background-color: #222;
+  background: linear-gradient(180deg, #3a3a42, #1e1e24);
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 30px 20px 0;
   margin-top: 40px;
 }
 
-footer p {
-  font-size: 0.9rem;
-  color: #aaa;
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  max-width: 1200px;
+  margin:0 auto;
+  padding-bottom: 25px;
+}
+.footer-izquierda{
+  display: flex;
+  align-items: center;
+  gap: 40px; /* espacio entre la lista y el logo */
+}
+
+.footer-enlaces {
+  list-style: none;
+  text-align: left;
+}
+
+.footer-enlaces li{
+  margin-bottom: 8px;
+}
+
+.footer-enlaces a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.footer-enlaces a:hover{
+  text-decoration: underline;
+}
+
+.footer-logo img{
+height: 140px;
+width: auto;
+}
+
+.footer-contacto h4{
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.redes{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.icono-red:hover {
+  transform: scale(1.15);
+}
+
+/* Contenedor de otro color para el párrafo */
+.footer-info {
+  background-color: var(--color-principal);  
+  padding: 15px 20px;
+}
+
+.footer-info p {
+  font-size: 0.85rem;
+  color: white;
+  max-width: 1200px;
+  margin: 0 auto;
 }
