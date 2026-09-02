@@ -44,7 +44,7 @@ header {
   height: 80px;   
   width: auto;
 }
-
+/*NAVEGACION (NAV)*/
 nav {
   display: flex;
   gap: 20px;
